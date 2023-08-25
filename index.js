@@ -3,21 +3,21 @@ let prompt = createPrompt();
 
 let employee = {}
 
-let firstName = prompt("First Name: ");
-if (!firstName) {
-    console.error('Invalid first name');
+let Corp = prompt("Corp: ");
+if (!Corp) {
+    console.error('Invalid Corp');
     process.exit(1);
 }
 
-employee.firstName = firstName;
+employee.Corp = Corp;
 
-let lastName = prompt("Last Name: ");
-if(!lastName) {
-    console.error(`Invalid last name`);
+let Position = prompt("Position: ");
+if(!Position) {
+    console.error(`Invalid position`);
     process.exit(1);
 }
 
-employee.lastName = lastName;
+employee.lastName = Position;
 
 let startDateYear = prompt("Employee Start Year (1990 - 2023): ");
 startDateYear = Number(startDateYear);
